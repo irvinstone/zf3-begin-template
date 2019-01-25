@@ -1,0 +1,10 @@
+version: '2'
+services:
+  zf2:
+    build:
+      context:  ./docker/
+    ports:
+     - "8080:8080"
+    volumes:
+     - .:/app/
+    network_mode: host
